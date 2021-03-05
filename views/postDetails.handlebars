@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <div class="">
+        {{>header}}
+
+        <div class="post-content container-fluid">
+            <div class="row alert border border-bottom d-flex align-items-center">
+                <div class="col-md-4">
+                    {{#if post.image}} 
+                        <img src="/uploads/{{post.image}}" alt="">
+                        {{else}}
+                        <img src="https://via.placeholder.com/350x150" alt="">
+                    {{/if}}
+                    
+                </div>
+                <div class="col-md-8">
+                    <h2>{{post.title}}</h2>
+                    <div>
+                        {{post.content}}
+                    </div>
+                    <a href="/">Back To Home Page</a>
+
+                </div>
+
+                <div class="col-12">
+                    <hr>
+                    <br><br>
+                    <div class="card">
+                        <div class="card-header ">
+                            Comment
+                        </div>
+                        <form method="POST" action="/do-comment">
+                            <div class=" create-comment">
+                                <input type="hidden" name="post_id" value="{{post._id}}">
+                                <input type="text" name="username" class="form-control" placeholder="username">
+                                <br>
+                                <textarea name="comment" class="form-control" id="exampleFormControlTextarea1"
+                                    rows="3" placeholder="comment"></textarea>
+                                <br>
+                                <input type="submit" value="Comment" class="btn btn-primary">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <hr>
+                    <br>
+                    <h5 class="font-weight-bold font-italic"><u>Top 5 Comments</u></h5>
+
+                    {{#each post.comments}} 
+                    <div class=" row d-flex align-items-center top-comments">
+                        <div class="col-md-1 ">
+                            <img src="https://via.placeholder.com/50" class="rounded-circle">
+                        </div>
+                        <div class="col-md-11">
+                            <h5 class="commentor-username">{{username}}</h5>
+                            <p>{{comment}}</p>
+                        </div>
+                    </div>
+                    {{/each}}
+
+                </div>
+
+            </div>
+        </div>
+        {{>footer}}
+    </div>
+
+</body>
+
+</html>

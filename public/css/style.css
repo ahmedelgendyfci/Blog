@@ -1,0 +1,293 @@
+/* vietnamese */
+@font-face {
+    font-family: 'Saira Semi Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Saira SemiCondensed Regular'), local('SairaSemiCondensed-Regular'), url(https://fonts.gstatic.com/s/sairasemicondensed/v5/U9MD6c-2-nnJkHxyCjRcnMHcWVWV1cWRRX8DaOYuqA.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Saira Semi Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Saira SemiCondensed Regular'), local('SairaSemiCondensed-Regular'), url(https://fonts.gstatic.com/s/sairasemicondensed/v5/U9MD6c-2-nnJkHxyCjRcnMHcWVWV1cWRRX8CaOYuqA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Saira Semi Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Saira SemiCondensed Regular'), local('SairaSemiCondensed-Regular'), url(https://fonts.gstatic.com/s/sairasemicondensed/v5/U9MD6c-2-nnJkHxyCjRcnMHcWVWV1cWRRX8MaOY.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body{
+    font-family:'Saira Semi Condensed' ;
+}
+
+nav, footer{
+    text-transform: capitalize;
+}
+footer{
+    margin-top: 30px;
+    color: #fff;
+}
+
+.post-content .row
+{
+    margin: 10px 0px;
+}
+.post-content .row img
+{
+    max-height: 150px;
+    max-width: 350;
+    width: 100%;
+}
+
+
+/* read more read less */
+.addReadMore.showlesscontent .SecSec,
+.addReadMore.showlesscontent .readLess {
+    display: none;
+}
+
+.addReadMore.showmorecontent .readMore {
+    display: none;
+}
+
+.create-comment{
+    padding: 15px;
+    background-color: rgba(0,0,0,.03);
+}
+.create-comment textarea{
+    resize: none;
+}
+.top-comments div
+{
+    padding: 10px;
+}
+.commentor-username{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* login form style */
+
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-form-1{
+    padding: 9%;
+    background:#282726;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    margin-bottom:5%;
+    color:#fff;
+}
+.btnSubmit{
+    font-weight: 600;
+    width: 25%;
+    color: #282726;
+    background-color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding:1%;
+}
+.btnForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btnForgetPwd:hover{
+    text-decoration:none;
+    color:#fff;
+}
+
+
+/* services */
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+a.box {
+	color: #fff;
+	background-color: #2f9b9b;
+	display: block;
+	width:300px;
+	min-height: 300px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 50%;
+    margin: auto;
+}
+.col
+{
+    padding: 10px;
+}
+.content {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	top: 0;
+	margin: auto;
+	z-index: 2;
+    height: 4em;
+    padding: 0px 50px;
+    transition: all .5s ease;
+    text-align: center;
+}
+
+a:hover .content {
+	height: 8em;
+	transition: all .5s ease;
+}
+.content p{
+    position: relative;
+    transition-delay: 0.5s;
+}
+
+
+a:hover .content p{
+    bottom: 50px;
+    transition-duration: 0.5s;
+}
+a .service-icon 
+{
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+a:hover .service-icon
+{
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.hoverOfContent
+{
+    height: 8em;
+	transition: all .5s ease;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+.description {
+	height: 0;
+	opacity: 0;
+	margin: 5px;
+	line-height: 1.5em;
+	transition-duration:.5s 
+}
+
+a:hover .description{
+	height: 3em;
+	opacity: 1;
+	visibility: visible;
+	transition: all .5s ease;
+}
+.hoverOfDescription{
+	height: 3em;
+	opacity: 1;
+	visibility: visible;
+	transition: all .5s ease;
+}
+
+.box .serve{
+    font-size: 45px;
+}
+
+
+section
+{
+    height: 5000px;
+}
+
+.red{
+    background-color: red !important;
+    transition-duration: 1s ;
+}
+
+/* login - register style  */
+
+.main-head{
+    height: 150px;
+    background: #FFF;
+   
+}
+
+.sidenav {
+    height: 100%;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.main {
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+}
+
+@media screen and (max-width: 450px) {
+    .login-form{
+        margin-top: 10%;
+    }
+
+    .register-form{
+        margin-top: 10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 40%; 
+    }
+
+    .sidenav{
+        width: 40%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+    }
+
+    .login-form{
+        
+        margin-top: 24.5%;
+        margin-bottom: 20%;
+    }
+
+    .register-form{
+        margin-top: 20%;
+    }
+}
+
+
+.login-main-text{
+    margin-top: 20%;
+    padding: 60px;
+    color: #fff;
+}
+
+.login-main-text h2{
+    font-weight: 300;
+}
+
+.btn-black{
+    background-color: #000 !important;
+    color: #fff;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <div class="">
+        {{>header}}
+
+        {{#each posts}}
+        <div class="post-content container">
+            <div class="row alert border border-bottom d-flex align-items-center">
+                <div class="col-md-4">
+                    {{#if image}} 
+                        <img src="/uploads/{{image}}" alt="">
+                        {{else}}
+                        <img src="https://via.placeholder.com/350x150" alt="">
+                    {{/if}}
+                </div>
+                <div class="col-md-8">
+                    <h2>{{title}}</h2>
+                    <div class="addReadMore showlesscontent">
+                        {{content}}
+                    </div>
+                    <a href="postdetails/{{_id}}">Read More</a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+        <br><br>
+        {{>footer}}
+    </div>
+
+</body>
+
+</html>
